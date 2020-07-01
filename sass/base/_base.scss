@@ -1,18 +1,21 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #B28451;
+$color-primary: #282c37;
+$color-primary-light: #303646;
+$color-primary-lighter: #bec8e4;
 
-$color-secondary: #101d2c;
+$color-secondary: #30A9DE;
+$color-secondary-light: #b9e3f5;
 
 $color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-grey-light-2: #E0E3DA;
+$color-grey-light-3: #aaa;
 
-$color-grey-dark-1: #54483A;
-$color-grey-dark-2: #6D5D4B;
+$color-grey-dark-1: #484a50;
+$color-grey-dark-2: #383A3F;
 
 // FONT VARIABLES
 $font-primary: 'Lato', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-display: 'Source Sans Pro', sans-serif;
 
 *,
 *::before,
@@ -27,3 +30,9 @@ html {
     font-size: 62.5%; //1rem = 10px
 }
 
+.mb-sm { margin-bottom: 1rem; }
+.mb-md { margin-bottom: 2rem; }
+.mb-lg { margin-bottom: 3rem; }
+.mb-hg { margin-bottom: 4rem; }
+
+.center-text { text-align: center; }

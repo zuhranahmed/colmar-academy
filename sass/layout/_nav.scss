@@ -1,0 +1,50 @@
+.nav {
+    grid-column: full-start / full-end;
+    padding: 1.6rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        height: 3.2rem;
+        width: auto;
+    }
+
+    &__name {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
+
+    &__name--bold {
+        font-weight: 700;
+
+    }
+
+    &__name--thin {
+        font-weight: 300;
+        color: $color-grey-light-3;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.6rem;
+
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-secondary;
+        }
+    }
+}

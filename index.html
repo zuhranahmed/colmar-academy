@@ -5,13 +5,143 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <!--
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Colmar Academy &mdash; your home, your freedom</title>
+        -->
+        <title>Colmar Academy</title>
     </head>
-    <body>
-        TEST TEXT
+
+    <body class="container">
+        <nav class="nav">
+            <img src="img/ic-logo.svg" alt="Colmar Academy logo" class="nav__logo">
+            <span class="nav__name nav__name--bold">Colmar</span>
+            <span class="nav__name nav__name--thin">Academy</span>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">On campus</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Online</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <header class="header-picture">
+            <img src="img/banner.jpg" alt="Students studying">
+        </header>
+
+        <header class="header-content">
+            <h1 class="heading-1 mb-lg">Learn something new everyday</h1>
+            <h2 class="heading-2 mb-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h2>
+            <a href="#" class="btn btn--big">Start here</a>
+        </header>
+
+        <div class="practice">
+            <img src="img/information-main.jpg" alt="Student reading" class="practice__img">
+            <h3 class="heading-3 mb-md">It doesn't hurt to keep practicing</h3>
+            <p class="practice__text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias tenetur."</p>
+            <p class="practice__name">Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+
+        <div class="info">
+            <div class="info-block">
+                <img src="img/information-orientation.jpg" alt="Students walking on campus" class="info-block__img">
+                <div class="info-block__content">
+                    <h4 class="heading-4 mb-sm">Orientation date</h4>
+                    <p class="info-block__time">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#" class="btn btn--small">Read more</a>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <img src="img/information-campus.jpg" alt="Campus" class="info-block__img">
+                <div class="info-block__content">
+                    <h4 class="heading-4 mb-sm">Our campus</h4>
+                    <p class="info-block__time">Find which campus is close by you</p>
+                    <a href="#" class="btn btn--small">Read more</a>
+                </div>
+            </div>
+
+            <div class="info-block info-block--color">
+                <img src="img/information-guest-lecture.jpg" alt="Oliver Sack" class="info-block__img">
+                <div class="info-block__content">
+                    <h4 class="heading-4 mb-sm info-block__heading--color">Our guest lecture</h4>
+                    <p class="info-block__time info-block__time--color">Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <a href="#" class="btn btn--small">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="cards">
+            <h3 class="heading-3 center-text mb-hg">Start learning</h3>
+            <div class="cards__container">
+                <div class="card">
+                    <img src="img/course-software.jpg" alt="Software engineering course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Software engineering</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>Web Development, Mobile Development, iOT, APIs</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="img/course-computer-art.jpg" alt="Computer art course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Computer art</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="img/course-design.jpg" alt="Design course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Design</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>User Experience Design, User Research, Visual Design</p>
+                    </div>
+                    
+                </div>
+    
+                <div class="card">
+                    <img src="img/course-data.jpg" alt="Data course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Data</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>Data Science, Big Data, SQL, Data Visualization</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="img/course-business.jpg" alt="Business course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Business</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>Product Development, Business Development, Startup</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="img/course-marketing.jpg" alt="Marketing course" class="card__img">
+                    <div class="card__content">
+                        <h4 class="heading-4">Marketing</h4>
+                        <h5 class="heading-5">Courses</h5>
+                        <p class=card__text>Analytics, Content Marketing, Mobile Marketing</p>
+                    </div>                    
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="thesis__video">
+            Thesis video
+        </div>
+
+        <div class="thesis__content">
+            Thesis content
+        </div>
+
+        <footer class="footer">
+            Footer
+        </footer>
     </body>
 </html>

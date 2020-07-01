@@ -1,0 +1,42 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    &--big {
+        background-color: $color-primary;
+        color: $color-grey-light-1;
+        font-weight: 300;
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    &--big:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    }
+
+    &--big:active,
+    &--big:focus {
+        outline: none; //to get rid of outline on <button> element
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    }
+
+    &--small:link,
+    &--small:visited {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-secondary;
+    }
+
+    &--small:hover {
+        border-bottom: 1px solid $color-secondary;
+    }
+}

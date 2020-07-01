@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.mb-sm {
+  margin-bottom: 1rem; }
+
+.mb-md {
+  margin-bottom: 2rem; }
+
+.mb-lg {
+  margin-bottom: 3rem; }
+
+.mb-hg {
+  margin-bottom: 4rem; }
+
+.center-text {
+  text-align: center; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #383A3F;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.heading-1,
+.heading-3,
+.heading-4 {
+  color: #30A9DE;
+  font-weight: 300; }
+
+.heading-1 {
+  font-size: 5rem;
+  line-height: 1.2; }
+
+.heading-2 {
+  font-size: 2.5rem;
+  font-weight: 300; }
+
+.heading-3 {
+  font-size: 4rem; }
+
+.heading-4 {
+  color: #303646;
+  font-size: 2.4rem;
+  font-weight: 400; }
+
+.heading-5 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: .8rem;
+  margin-top: .8rem; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s; }
+
+.btn--big {
+  background-color: #282c37;
+  color: #f9f7f6;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  display: block;
+  text-align: center; }
+
+.btn--big:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--big:active, .btn--big:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--small:link, .btn--small:visited {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #30A9DE; }
+
+.btn--small:hover {
+  border-bottom: 1px solid #30A9DE; }
+
+.cards {
+  background-color: #E0E3DA;
+  grid-column: full-start / full-end;
+  padding: 3.2rem 7.2rem; }
+  .cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 3.2rem; }
+
+.card {
+  background-color: #f9f7f6;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden; }
+  .card__img {
+    width: 100%;
+    height: auto; }
+  .card__content {
+    padding: 1.6rem 1.6rem 2.4rem 1.6rem; }
+  .card__text {
+    font-size: 1.6rem; }
+
+.footer {
+  background-color: palegreen;
+  grid-column: full-start / full-end; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 0.6fr [center-end center-start] 0.4fr [full-end];
+  grid-template-rows: repeat(6, min-content); }
+
+.header-picture {
+  background-color: #E0E3DA;
+  padding: 3.2rem 2.4rem; }
+  .header-picture img {
+    width: 100%;
+    background-size: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.header-content {
+  background-color: #E0E3DA;
+  padding-right: 25%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.info {
+  background-color: #f9f7f6;
+  border-left: 1px solid #E0E3DA;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 3px; }
+
+.info-block {
+  display: grid;
+  grid-template-columns: .35fr .65fr;
+  grid-column-gap: 8%;
+  align-items: center; }
+  .info-block:first-child {
+    border-bottom: 1px solid #E0E3DA; }
+  .info-block:nth-child(2) {
+    border-top: 1px solid #E0E3DA; }
+  .info-block__img {
+    width: 100%;
+    margin-left: 1.6rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .info-block__time {
+    font-size: 1.6rem;
+    margin-bottom: 1rem; }
+  .info-block--color {
+    background-color: #282c37; }
+  .info-block__heading--color {
+    color: #f9f7f6; }
+  .info-block__time--color {
+    color: #f9f7f6; }
+
+.nav {
+  grid-column: full-start / full-end;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center; }
+  .nav__logo {
+    height: 3.2rem;
+    width: auto; }
+  .nav__name {
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+  .nav__name--bold {
+    font-weight: 700; }
+  .nav__name--thin {
+    font-weight: 300;
+    color: #aaa; }
+  .nav__list {
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    margin-left: auto; }
+  .nav__item:not(:last-child) {
+    margin-right: 1.6rem; }
+  .nav__link:link, .nav__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #30A9DE; }
+
+.practice {
+  background-color: #f9f7f6;
+  padding: 3.2rem 2.4rem; }
+  .practice__img {
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 3.2rem; }
+  .practice__text {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem; }
+  .practice__name {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400; }
+
+.thesis__video {
+  background-color: palevioletred; }
+
+.thesis__content {
+  background-color: powderblue; }

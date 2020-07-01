@@ -1,0 +1,31 @@
+.cards {
+    background-color: $color-grey-light-2;
+    grid-column: full-start / full-end;
+    padding: 3.2rem 7.2rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 3.2rem;
+    }
+}
+
+.card {
+    background-color: $color-grey-light-1;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    border-radius: 3px;
+    overflow: hidden;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+}
