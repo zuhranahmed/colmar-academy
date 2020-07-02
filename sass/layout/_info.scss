@@ -6,13 +6,23 @@
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 3px;
 
+    @media only screen and (max-width: $bp-900) {
+        grid-column: full-start / full-end;
+        grid-row: 4 / 5;
+    }
 }
 
 .info-block {
+    padding: 1.6rem;
+
     display: grid;
     grid-template-columns: .35fr .65fr;
     grid-column-gap: 8%;
     align-items: center;
+
+    @media only screen and (max-width: $bp-900) {
+        padding: 5rem;
+    }    
 
     &:first-child {
         border-bottom: 1px solid $color-grey-light-2;
@@ -24,12 +34,11 @@
 
     &__img {
         width: 100%;
-        margin-left: 1.6rem;
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
     }
 
     &__time {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         margin-bottom: 1rem;
     }
 

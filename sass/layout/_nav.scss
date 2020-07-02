@@ -30,19 +30,27 @@
         font-weight: 700;
         color: $color-primary;
 
+        @media only screen and (max-width: $bp-600) {
+            display: none;
+        }
     }
 
     &__name--thin {
         font-weight: 300;
         color: $color-grey-light-3;
+
+        @media only screen and (max-width: $bp-600) {
+            display: none;
+        }
     }
 
     &__list {
         list-style: none;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
 
         display: flex;
         margin-left: auto;
+
     }
 
     &__item {

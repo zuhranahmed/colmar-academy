@@ -10,6 +10,10 @@
 
     &__video-section {
         padding-right: 2.4rem;
+
+        @media only screen and (max-width: $bp-900) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__video {
@@ -18,12 +22,14 @@
     }
 
     &__quote {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         margin-top: .8rem;
     }
 
     &__content-section {
-
+        @media only screen and (max-width: $bp-900) {
+            display: none;
+        }
     }
 
     &__item {
@@ -31,6 +37,7 @@
 
         display: grid;
         grid-template-columns: .35fr .65fr;
+        align-items: center;
 
         &:first-child {
             background-color: $color-primary;
@@ -50,6 +57,6 @@
     }
 
     &__description {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
 }

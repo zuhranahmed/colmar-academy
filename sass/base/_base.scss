@@ -1,22 +1,3 @@
-// COLOR VARIABLES
-$color-primary: #282c37;
-$color-primary-light: #303646;
-$color-primary-lighter: #bec8e4;
-
-$color-secondary: #30A9DE;
-$color-secondary-light: #b9e3f5;
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #E0E3DA;
-$color-grey-light-3: #aaa;
-
-$color-grey-dark-1: #484a50;
-$color-grey-dark-2: #383A3F;
-
-// FONT VARIABLES
-$font-primary: 'Lato', sans-serif;
-$font-display: 'Source Sans Pro', sans-serif;
-
 *,
 *::before,
 *::after {
@@ -28,6 +9,15 @@ $font-display: 'Source Sans Pro', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
+    background-color: $color-primary;
+
+    @media only screen and (max-width: $bp-1200) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-900) {
+        font-size: 62.5%;
+    }
 }
 
 .mb-sm { margin-bottom: 1rem; }

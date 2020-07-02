@@ -1,7 +1,14 @@
 .container {
+    max-width: 140rem;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: [full-start] .6fr [center-end center-start] .4fr [full-end];
     grid-template-rows: repeat(6, min-content);
+
+    @media only screen and (max-width: $bp-1200) {
+        max-width: 100vw;
+    }
 }
 
 
