@@ -1,4 +1,41 @@
 .footer {
-    background-color: palegreen;
+    background-color: $color-primary;
     grid-column: full-start / full-end;
+    padding: 1.6rem 2.4rem 3.4rem 2.4rem;
+
+    display: flex;
+
+    &__copyright {
+        margin-right: auto;
+        color: $color-grey-light-1;
+        font-size: 1.3rem;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.3rem;
+
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: $color-secondary;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-grey-light-1;
+        }
+    }
 }

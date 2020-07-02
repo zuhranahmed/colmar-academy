@@ -1,7 +1,55 @@
-.thesis__video {
-    background-color: palevioletred
-}
+.thesis {
+    grid-column: full-start / full-end;
+    background-color: $color-grey-light-1;
+    padding: 3.2rem 1rem 3.2rem 2.4rem;
 
-.thesis__content {
-    background-color: powderblue;
+    &__container {
+        display: grid;
+        grid-template-columns: .6fr .4fr;
+    }
+
+    &__video-section {
+        padding-right: 2.4rem;
+    }
+
+    &__video {
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    &__quote {
+        font-size: 1.6rem;
+        margin-top: .8rem;
+    }
+
+    &__content-section {
+
+    }
+
+    &__item {
+        padding: 1.6rem;
+
+        display: grid;
+        grid-template-columns: .35fr .65fr;
+
+        &:first-child {
+            background-color: $color-primary;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    }
+
+    &__text {
+        padding: 2.2rem;
+
+        display: grid;
+        align-content: center;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+    }
 }

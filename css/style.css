@@ -59,6 +59,9 @@ body {
   margin-bottom: .8rem;
   margin-top: .8rem; }
 
+.white-text {
+  color: #f9f7f6; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   display: inline-block;
@@ -103,7 +106,10 @@ body {
   background-color: #f9f7f6;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all .3s; }
+  .card:hover {
+    transform: scale(1.05); }
   .card__img {
     width: 100%;
     height: auto; }
@@ -113,8 +119,27 @@ body {
     font-size: 1.6rem; }
 
 .footer {
-  background-color: palegreen;
-  grid-column: full-start / full-end; }
+  background-color: #282c37;
+  grid-column: full-start / full-end;
+  padding: 1.6rem 2.4rem 3.4rem 2.4rem;
+  display: flex; }
+  .footer__copyright {
+    margin-right: auto;
+    color: #f9f7f6;
+    font-size: 1.3rem; }
+  .footer__list {
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex; }
+  .footer__item:not(:last-child) {
+    margin-right: 1.6rem; }
+  .footer__link:link, .footer__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #30A9DE;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #f9f7f6; }
 
 .container {
   display: grid;
@@ -162,16 +187,20 @@ body {
     margin-bottom: 1rem; }
   .info-block--color {
     background-color: #282c37; }
-  .info-block__heading--color {
-    color: #f9f7f6; }
-  .info-block__time--color {
-    color: #f9f7f6; }
 
 .nav {
   grid-column: full-start / full-end;
   padding: 1.6rem 2.4rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(249, 247, 246, 0.95);
+  z-index: 10;
   display: flex;
   align-items: center; }
+  .nav__logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
   .nav__logo {
     height: 3.2rem;
     width: auto; }
@@ -179,7 +208,8 @@ body {
     font-size: 2.4rem;
     text-transform: uppercase; }
   .nav__name--bold {
-    font-weight: 700; }
+    font-weight: 700;
+    color: #282c37; }
   .nav__name--thin {
     font-weight: 300;
     color: #aaa; }
@@ -193,7 +223,10 @@ body {
   .nav__link:link, .nav__link:visited {
     display: inline-block;
     text-decoration: none;
-    color: #30A9DE; }
+    color: #30A9DE;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    color: #282c37; }
 
 .practice {
   background-color: #f9f7f6;
@@ -210,8 +243,33 @@ body {
     font-size: 1.4rem;
     font-weight: 400; }
 
-.thesis__video {
-  background-color: palevioletred; }
-
-.thesis__content {
-  background-color: powderblue; }
+.thesis {
+  grid-column: full-start / full-end;
+  background-color: #f9f7f6;
+  padding: 3.2rem 1rem 3.2rem 2.4rem; }
+  .thesis__container {
+    display: grid;
+    grid-template-columns: .6fr .4fr; }
+  .thesis__video-section {
+    padding-right: 2.4rem; }
+  .thesis__video {
+    width: 100%;
+    margin-bottom: 2.4rem; }
+  .thesis__quote {
+    font-size: 1.6rem;
+    margin-top: .8rem; }
+  .thesis__item {
+    padding: 1.6rem;
+    display: grid;
+    grid-template-columns: .35fr .65fr; }
+    .thesis__item:first-child {
+      background-color: #282c37; }
+  .thesis__img {
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .thesis__text {
+    padding: 2.2rem;
+    display: grid;
+    align-content: center; }
+  .thesis__description {
+    font-size: 1.6rem; }
