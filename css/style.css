@@ -148,10 +148,16 @@ body {
   background-color: #E0E3DA;
   grid-column: full-start / full-end;
   padding: 3.2rem 7.2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .cards {
+      padding: 3.2rem; } }
   .cards__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 3.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .cards__container {
+        grid-template-columns: 1fr; } }
 
 .card {
   background-color: #f9f7f6;
@@ -170,6 +176,9 @@ body {
     color: #282c37; }
   .card__text {
     font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .card__img, .card__h5, .card__text {
+      display: none; } }
 
 .footer {
   background-color: #282c37;
