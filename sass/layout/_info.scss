@@ -22,7 +22,12 @@
 
     @media only screen and (max-width: $bp-900) {
         padding: 5rem;
-    }    
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        grid-template-columns: 1fr;
+        padding: 1.6rem;
+    }
 
     &:first-child {
         border-bottom: 1px solid $color-grey-light-2;
@@ -32,12 +37,24 @@
         border-top: 1px solid $color-grey-light-2;
     }
 
+    // Give last info-block dark color
+    &:last-child {
+        background-color: $color-primary;
+    }
+
     &__img {
         width: 100%;
+        height: auto;
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
     }
 
-    &__time {
+    &__content {
+        @media only screen and (max-width: $bp-600) {
+            padding: 2rem;
+        }
+    }
+
+    &__description {
         font-size: $default-font-size;
         margin-bottom: 1rem;
     }
