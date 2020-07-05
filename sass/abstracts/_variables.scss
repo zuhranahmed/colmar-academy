@@ -16,13 +16,8 @@ $font-display: 'Source Sans Pro', sans-serif;
 $default-font-size: 1.6rem;
 
 // RESPONSIVE BREAKPOINTS
+$bp-1500: 93.75em; // 1500px
 $bp-1200: 75em; // 1200px
 $bp-900: 56.25em; // 900px
 $bp-600: 37.5em; // 600px
-
-
-/*
-$bp-large: 62.5em; // 1000px
-$bp-medium: 50em; // 800px
-$bp-small: 37.5em; // 600px
-*/
+$bp-420: 26.25em; // 420px

@@ -3,6 +3,10 @@
     background-color: $color-grey-light-1;
     padding: 3.2rem 1rem 3.2rem 2.4rem;
 
+    @media only screen and (max-width: $bp-600) {
+        padding: 3.2rem 0 2.4rem 0;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: .6fr .4fr;
@@ -14,6 +18,10 @@
         @media only screen and (max-width: $bp-900) {
             grid-column: 1 / -1;
         }
+
+        @media only screen and (max-width: $bp-600) {
+            padding-right: 0;
+        }
     }
 
     &__video {
@@ -24,6 +32,13 @@
     &__quote {
         font-size: $default-font-size;
         margin-top: .8rem;
+    }
+
+    &__h4,
+    &__quote {
+        @media only screen and (max-width: $bp-600) {
+            display: none;
+        }
     }
 
     &__content-section {

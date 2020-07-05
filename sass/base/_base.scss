@@ -11,6 +11,10 @@ html {
     font-size: 62.5%; //1rem = 10px
     background-color: $color-primary;
 
+    @media only screen and (max-width: $bp-1500) {
+        background-color: transparent;
+    }
+
     @media only screen and (max-width: $bp-1200) {
         font-size: 50%;
     }
@@ -18,11 +22,9 @@ html {
     @media only screen and (max-width: $bp-900) {
         font-size: 62.5%;
     }
+
+    @media only screen and (max-width: $bp-420) {
+        font-size: 50%;
+    }
 }
 
-.mb-sm { margin-bottom: 1rem; }
-.mb-md { margin-bottom: 2rem; }
-.mb-lg { margin-bottom: 3rem; }
-.mb-hg { margin-bottom: 4rem; }
-
-.center-text { text-align: center; }

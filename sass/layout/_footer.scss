@@ -16,6 +16,10 @@
         font-size: 1.3rem;
 
         display: flex;
+
+        @media only screen and (max-width: $bp-600) {
+            display: none;
+        }
     }
 
     &__item {
